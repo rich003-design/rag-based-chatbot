@@ -1,0 +1,30 @@
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug RAG Streamlit App",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "${workspaceFolder}/app.py"
+      ],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Debug Document Ingestion",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/ingest.py",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
